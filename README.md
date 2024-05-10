@@ -1,11 +1,5 @@
 This is a responsive portfolio logo with very striking colors that incorporates light and dark mode, interactive buttons and much more. Here you have several screenshots of what it looks like and the code at the top.
 
- __
-(._.)
-<||>
-_/\_
-
-
 ![Captura de pantalla 2024-05-10 105445](https://github.com/Hugosc05/PortFolio/assets/165696114/7954ab57-be9e-4674-98ff-89851ff7da8d)
 
 
