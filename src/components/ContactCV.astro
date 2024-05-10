@@ -1,0 +1,36 @@
+---
+import CallToAction from './CallToAction.astro';
+import Icon from './Icon.astro';
+---
+
+<bottom>
+        <CallToAction href="/assets/Curriculum vitae.pdf">
+                Download CV
+            <Icon icon="download" size="1.2em"/>
+</bottom>
+
+<style>
+	
+	h2 {
+		font-size: var(--text-xl);
+		text-align: center;
+        align-items: center;
+		max-width: 15ch;
+
+	}
+
+	@media (min-width: 50em) {
+		aside {
+			padding: 7.5rem;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		h2 {
+			font-size: var(--text-3xl);
+			text-align: center;
+            align-items: center;
+		}
+	}
+</style>

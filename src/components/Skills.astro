@@ -1,0 +1,104 @@
+---
+import Icon from './Icon.astro';
+import CPlusPlusIcon from './CPlusPlusIcon.astro';
+import JavaIcon from './JavaIcon.astro';
+import PythonIcon from './PythonIcon.astro';
+
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Studies</h2>
+		<p>Today I am in the first year of my computer engineering degree.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Competitions</h2>
+		<p>To date I have participated in several programming competitions, the most recent one organized by the university at the national level.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Programming languages</h2>
+		<div class="icon-boxes">
+			<div class="icon-box">
+				<CPlusPlusIcon size="1.5rem"/>
+			</div>
+			<div class="icon-box">
+				<JavaIcon size="1.5rem"/>
+			</div>
+		</div>
+	</footer>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	.icon-boxes {
+		display: flex;
+		gap: 2rem;
+	}
+	.icon-box {
+		width: 3rem;
+		height: 3rem;
+		background-color: var(--gray-999);
+		border-radius: 0.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.icon-box > svg {
+		width: 2rem;
+		height: 2rem;
+	}
+
+	.horizontal-icons {
+		display: flex;
+		align-items: center;
+		gap: 1rem; /* Espacio entre los íconos */
+	}
+
+	.horizontal-icons > svg {
+		width: 0.5rem; /* Tamaño de los íconos */
+		height: 0.1rem;
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
